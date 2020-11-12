@@ -1,10 +1,10 @@
-create function dbo.rremove(
-   @string nvarchar(max),
-   @len int
+create or alter function dbo.rremove(
+   @txt   nvarchar(max),
+   @len   int
 )   returns nvarchar(max)
 as begin
-    if len(@string) < @len return ''
+    if len(@txt) < @len return ''
 
-    return left(@string, len(@string) - @len)
+    return left(@txt, len(@txt) - @len)
 end;
 go
