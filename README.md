@@ -1,2 +1,3 @@
-# SQL-Server-helpers
-Helpers for SQL Server
+# SQL Server helpers
+
+TSQL Helpers for SQL Server
