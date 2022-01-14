@@ -4,11 +4,6 @@ drop   function if exists dbo.regexp_replace;
 go
 
 create function dbo.regexp_replace (
- --
- -- https://stackoverflow.com/a/38462603/180275
- --
- -- These match exactly the parameters of RegExp
- --
     @searchstring  varchar(4000),
     @pattern       varchar(4000),
     @replacestring varchar(4000) 
